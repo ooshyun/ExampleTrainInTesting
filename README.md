@@ -1,3 +1,5 @@
+- This repo is forked from https://github.com/test-time-training/discover
+
 <p align="center">
   <h1 align="center">🔬 TTT-Discover</h1>
   <h3 align="center">Learning to Discover at Test Time</h3>
