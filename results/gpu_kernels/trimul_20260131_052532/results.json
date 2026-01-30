@@ -1,0 +1,45 @@
+{
+  "task": {
+    "name": "trimul",
+    "description": "Triangle Multiplicative Update for AlphaFold3",
+    "target_runtime_us": 1000.0,
+    "reference_code": "\n# Reference TriMul implementation (PyTorch)\nimport torch\nfrom torch import nn, einsum\n\nclass TriMul(nn.Module):\n    def __init__(self, dim: int, hidden_dim: int):\n        super().__init__()\n        self.norm = nn.LayerNorm(dim)\n        self.left_proj = nn.Linear(dim, hidden_dim, bias=False)\n        self.right_proj = nn.Linear(dim, hidden_dim, bias=False)\n        self.left_gate = nn.Linear(dim, hidden_dim, bias=False)\n        self.right_gate = nn.Linear(dim, hidden_dim, bias=False)\n        self.out_gate = nn.Linear(dim, hidden_dim, bias=False)\n        self.to_out_norm = nn.LayerNorm(hidden_dim)\n        self.to_out = nn.Linear(hidden_dim, dim, bias=False)\n\n    def forward(self, x, mask):\n        x = self.norm(x)\n        left = self.left_proj(x) * mask.unsqueeze(-1) * self.left_gate(x).sigmoid()\n        right = self.right_proj(x) * mask.unsqueeze(-1) * self.right_gate(x).sigmoid()\n        out = einsum('... i k d, ... j k d -> ... i j d', left, right)\n        out = self.to_out(self.to_out_norm(out) * self.out_gate(x).sigmoid())\n        return out\n",
+    "test_configs": [
+      {
+        "seqlen": 256,
+        "bs": 2,
+        "dim": 128,
+        "hidden_dim": 128
+      },
+      {
+        "seqlen": 512,
+        "bs": 1,
+        "dim": 128,
+        "hidden_dim": 128
+      },
+      {
+        "seqlen": 768,
+        "bs": 1,
+        "dim": 128,
+        "hidden_dim": 128
+      },
+      {
+        "seqlen": 1024,
+        "bs": 1,
+        "dim": 128,
+        "hidden_dim": 128
+      }
+    ],
+    "gpu_type": "H100"
+  },
+  "saved_at": "2026-01-31T05:25:32.167660",
+  "total_evaluations": 30,
+  "top_k_saved": 20,
+  "statistics": {
+    "best_runtime_us": 974.7907600565966,
+    "worst_runtime_us": 1598.0248318613046,
+    "mean_runtime_us": 1309.5736262565802,
+    "target_runtime_us": 1000.0,
+    "num_beat_target": 1
+  }
+}

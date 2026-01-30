@@ -1,0 +1,148 @@
+{
+  "saved_at": "2026-01-31T05:17:56.898284",
+  "num_kernels": 20,
+  "top_scores": [
+    0.8946182422055303,
+    0.8888901739219071,
+    0.8344135429536186,
+    0.8320089825099165,
+    0.8303379774307541,
+    0.8079873313414637,
+    0.8001727662585918,
+    0.7968447450495298,
+    0.7849669566847677,
+    0.772707943668037,
+    0.7697794471234417,
+    0.7658901950002501,
+    0.7658129824743455,
+    0.7565172805411464,
+    0.7563710436412296,
+    0.752292534394743,
+    0.7490319771039778,
+    0.7343448091170721,
+    0.6989102846427812,
+    0.6914746164485691
+  ],
+  "kernels": [
+    {
+      "rank": 1,
+      "score": 0.8946182422055303,
+      "step": 23,
+      "filename": "kernel_rank01_score0.8946.py"
+    },
+    {
+      "rank": 2,
+      "score": 0.8888901739219071,
+      "step": 27,
+      "filename": "kernel_rank02_score0.8889.py"
+    },
+    {
+      "rank": 3,
+      "score": 0.8344135429536186,
+      "step": 18,
+      "filename": "kernel_rank03_score0.8344.py"
+    },
+    {
+      "rank": 4,
+      "score": 0.8320089825099165,
+      "step": 3,
+      "filename": "kernel_rank04_score0.8320.py"
+    },
+    {
+      "rank": 5,
+      "score": 0.8303379774307541,
+      "step": 16,
+      "filename": "kernel_rank05_score0.8303.py"
+    },
+    {
+      "rank": 6,
+      "score": 0.8079873313414637,
+      "step": 13,
+      "filename": "kernel_rank06_score0.8080.py"
+    },
+    {
+      "rank": 7,
+      "score": 0.8001727662585918,
+      "step": 7,
+      "filename": "kernel_rank07_score0.8002.py"
+    },
+    {
+      "rank": 8,
+      "score": 0.7968447450495298,
+      "step": 2,
+      "filename": "kernel_rank08_score0.7968.py"
+    },
+    {
+      "rank": 9,
+      "score": 0.7849669566847677,
+      "step": 29,
+      "filename": "kernel_rank09_score0.7850.py"
+    },
+    {
+      "rank": 10,
+      "score": 0.772707943668037,
+      "step": 12,
+      "filename": "kernel_rank10_score0.7727.py"
+    },
+    {
+      "rank": 11,
+      "score": 0.7697794471234417,
+      "step": 26,
+      "filename": "kernel_rank11_score0.7698.py"
+    },
+    {
+      "rank": 12,
+      "score": 0.7658901950002501,
+      "step": 1,
+      "filename": "kernel_rank12_score0.7659.py"
+    },
+    {
+      "rank": 13,
+      "score": 0.7658129824743455,
+      "step": 0,
+      "filename": "kernel_rank13_score0.7658.py"
+    },
+    {
+      "rank": 14,
+      "score": 0.7565172805411464,
+      "step": 17,
+      "filename": "kernel_rank14_score0.7565.py"
+    },
+    {
+      "rank": 15,
+      "score": 0.7563710436412296,
+      "step": 11,
+      "filename": "kernel_rank15_score0.7564.py"
+    },
+    {
+      "rank": 16,
+      "score": 0.752292534394743,
+      "step": 20,
+      "filename": "kernel_rank16_score0.7523.py"
+    },
+    {
+      "rank": 17,
+      "score": 0.7490319771039778,
+      "step": 5,
+      "filename": "kernel_rank17_score0.7490.py"
+    },
+    {
+      "rank": 18,
+      "score": 0.7343448091170721,
+      "step": 4,
+      "filename": "kernel_rank18_score0.7343.py"
+    },
+    {
+      "rank": 19,
+      "score": 0.6989102846427812,
+      "step": 14,
+      "filename": "kernel_rank19_score0.6989.py"
+    },
+    {
+      "rank": 20,
+      "score": 0.6914746164485691,
+      "step": 25,
+      "filename": "kernel_rank20_score0.6915.py"
+    }
+  ]
+}
